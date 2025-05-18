@@ -1,397 +1,347 @@
+
 export const it = {
   nav: {
     home: "Home",
-    apartments: "Appartamenti",
-    amenities: "Servizi",
+    registration: "Iscrizione",
+    schedule: "Programma",
     gallery: "Galleria",
     contact: "Contatti",
-    bookNow: "Prenota Ora"
+    register: "Iscriviti Ora"
   },
   hero: {
-    subtitle: "ALLOGGI DI LUSSO SUL MARE",
-    title: "Vivi la Tranquillità del Mare",
-    description: "Scopri la nostra esclusiva collezione di appartamenti di lusso e camere d'albergo sul mare, che offrono comfort impareggiabile e viste mozzafiato sul mare.",
-    bookStay: "Prenota il tuo Soggiorno",
-    exploreApartments: "Esplora gli Appartamenti",
+    subtitle: "EVENTO ANNUALE MARATONA",
+    title: "Sfida i Tuoi Limiti",
+    description: "Unisciti a migliaia di corridori in uno dei percorsi maratona più panoramici. Supera i tuoi limiti e vivi l'emozione della gara.",
+    register: "Iscriviti Ora",
+    viewSchedule: "Vedi Programma",
     scrollDown: "Scorri Giù"
   },
   footer: {
-    description: "Appartamenti di lusso sul mare e camere d'albergo con splendide viste sul mare, che offrono il perfetto connubio di comfort ed eleganza per la tua vacanza da sogno.",
+    description: "MarathonPro organizza eventi di corsa di livello mondiale che sfidano atleti di tutti i livelli. Unisciti al nostro prossimo evento per un'esperienza indimenticabile.",
     quickLinks: "Link Rapidi",
     contact: "Contatti",
     newsletter: "Newsletter",
-    newsletterDesc: "Iscriviti alla nostra newsletter per offerte speciali e aggiornamenti.",
+    newsletterDesc: "Iscriviti alla nostra newsletter per consigli di allenamento, aggiornamenti sugli eventi e offerte speciali.",
     yourEmail: "Il tuo indirizzo email",
     subscribe: "Iscriviti",
     allRights: "Tutti i diritti riservati."
   },
-  bookingForm: {
-    title: "Prenota il tuo Soggiorno",
-    checkIn: "Data di Check-in",
-    checkOut: "Data di Check-out",
-    adults: "Adulti",
-    children: "Bambini",
-    adult: "Adulto",
-    child: "Bambino",
-    selectDate: "Seleziona data",
-    checkAvailability: "Verifica Disponibilità",
-    bookingConfirmed: "Prenotazione Confermata!"
-  },
   testimonials: {
-    title: "Cosa Dicono i Nostri Ospiti",
-    description: "Scopri perché i nostri ospiti continuano a tornare a MareSereno per le loro fughe al mare."
+    title: "Cosa Dicono i Nostri Corridori",
+    description: "Scopri perché i partecipanti amano i nostri eventi di maratona e continuano a tornare anno dopo anno."
   },
   notFound: {
     title: "Pagina Non Trovata",
-    description: "Non siamo riusciti a trovare la pagina che stavi cercando. Forse hai preso una svolta sbagliata in paradiso?",
+    description: "Non siamo riusciti a trovare la pagina che stavi cercando. Forse hai preso una svolta sbagliata nella gara?",
     returnHome: "Torna alla Home"
   },
-  apartments: {
-    title: "I Nostri Appartamenti e Camere",
-    subtitle: "Scopri la nostra selezione di alloggi premium, dalle accoglienti mansarde ai lussuosi attici.",
-    filters: {
-      guests: "Ospiti",
-      anyGuests: "Qualsiasi numero di ospiti",
-      onePlus: "1+ ospiti",
-      twoPlus: "2+ ospiti",
-      threePlus: "3+ ospiti",
-      fourPlus: "4+ ospiti",
-      location: "Posizione",
-      allLocations: "Tutte le posizioni",
-      priceRange: "Fascia di Prezzo",
-      showing: "Visualizzando",
-      of: "di",
-      accommodations: "alloggi",
-      resetFilters: "Reimposta Filtri",
-      noMatch: "Nessun appartamento corrisponde ai tuoi filtri",
-      adjustFilters: "Prova a modificare i criteri di filtro per vedere più opzioni.",
-      viewDetails: "Visualizza Dettagli",
-      features: "caratteristiche",
-      more: "altro"
+  home: {
+    welcome: {
+      subtitle: "Benvenuti a MarathonPro",
+      title: "Vivi la Sfida di Corsa Definitiva",
+      description1: "MarathonPro ti offre un evento di corsa di primo livello immerso in un paesaggio mozzafiato. Che tu sia un corridore competitivo o un principiante, i nostri percorsi offrono la sfida perfetta e un'esperienza indimenticabile.",
+      description2: "Dalla panoramica maratona completa alla accessibile corsa di 10K, abbiamo progettato percorsi che mettono in mostra il bellissimo paesaggio offrendo al contempo un'esperienza di corsa di livello mondiale per atleti di tutti i livelli.",
+      learnMore: "Scopri di Più"
+    },
+    eventDetails: {
+      date: {
+        title: "Data Evento",
+        description: "15 Settembre 2025"
+      },
+      time: {
+        title: "Orario di Partenza",
+        description: "6:00 - Maratona, 7:30 - Mezza Maratona, 8:30 - 10K"
+      },
+      location: {
+        title: "Località",
+        description: "Parco Centrale, Centro Città"
+      },
+      prizes: {
+        title: "Premi",
+        description: "Montepremi totale di €10.000 per i migliori classificati"
+      }
+    },
+    raceCategories: {
+      subtitle: "Categorie di Gara",
+      title: "Scegli la Tua Sfida",
+      description: "Dai principianti ai corridori d'élite, abbiamo categorie adatte a tutti i livelli di fitness e aspirazioni.",
+      register: "Iscriviti"
+    },
+    features: {
+      subtitle: "Caratteristiche dell'Evento",
+      title: "Cosa Rende Speciale la Nostra Maratona",
+      description: "Goditi un'esperienza di gara premium con queste caratteristiche progettate per il tuo comfort e successo.",
+      medals: {
+        title: "Medaglie per Finisher",
+        description: "Bellissime medaglie personalizzate per tutti i partecipanti che completano la gara."
+      },
+      community: {
+        title: "Comunità di Corridori",
+        description: "Unisciti a migliaia di appassionati corridori provenienti da tutto il mondo."
+      },
+      route: {
+        title: "Percorso Panoramico",
+        description: "Corri attraverso paesaggi pittoreschi e luoghi simbolo iconici."
+      },
+      timing: {
+        title: "Cronometraggio Professionale",
+        description: "Cronometraggio preciso con chip per tutti i partecipanti con risultati istantanei."
+      },
+      support: {
+        title: "Supporto ai Corridori",
+        description: "Stazioni di ristoro e supporto medico durante tutta la gara."
+      },
+      health: {
+        title: "Salute e Benessere",
+        description: "Controlli sanitari, zone di recupero e attività per il benessere."
+      }
+    },
+    countdown: {
+      subtitle: "Segna sul Calendario",
+      title: "Conto alla Rovescia per la Gara",
+      description: "L'eccitazione sta crescendo. Preparati per un'incredibile esperienza nel giorno della gara!",
+      days: "Giorni",
+      hours: "Ore",
+      minutes: "Minuti",
+      seconds: "Secondi",
+      register: "Assicurati il Tuo Posto"
+    },
+    cta: {
+      title: "Pronto a Sfidare Te Stesso?",
+      description: "Unisciti a migliaia di corridori che superano i propri limiti in questo incredibile evento. Iscriviti ora per assicurarti il tuo posto!",
+      registerNow: "Iscriviti Ora"
     }
   },
   gallery: {
     title: "Galleria Fotografica",
-    subtitle: "Esplora il nostro paradiso sul mare attraverso immagini suggestive.",
+    subtitle: "Rivivi l'emozione attraverso la nostra collezione di momenti del giorno della gara.",
     filters: {
-      all: "Tutti",
-      exterior: "Esterno",
-      rooms: "Camere",
-      amenities: "Servizi"
+      all: "Tutto",
+      raceDay: "Giorno della Gara",
+      runners: "Corridori",
+      finishLine: "Traguardo"
     }
   },
-  booking: {
-    title: "Prenota il tuo Soggiorno",
-    subtitle: "Completa la tua prenotazione in pochi semplici passi.",
-    steps: {
-      chooseRoom: "Scegli Camera",
-      guestDetails: "Dettagli Ospite",
-      confirmation: "Conferma"
+  registration: {
+    title: "Iscriviti alla Maratona",
+    subtitle: "UNISCITI ALLA GARA",
+    description: "Assicurati il tuo posto nel nostro prossimo evento maratona. Scegli tra diverse categorie di gara che si adattano ai tuoi obiettivi ed esperienza.",
+    registerNow: "Iscriviti Ora",
+    process: {
+      subtitle: "PROCESSO DI ISCRIZIONE",
+      title: "Come Iscriversi",
+      description: "Completa questi semplici passaggi per confermare la tua partecipazione all'evento.",
+      steps: {
+        step1: {
+          title: "Scegli la Tua Gara",
+          description: "Seleziona tra maratona completa, mezza maratona o 10K in base alle tue preferenze e capacità."
+        },
+        step2: {
+          title: "Compila il Modulo di Iscrizione",
+          description: "Inserisci i tuoi dati personali, contatti di emergenza e eventuali requisiti speciali."
+        },
+        step3: {
+          title: "Pagamento Sicuro",
+          description: "Paga la quota di iscrizione in modo sicuro per confermare il tuo posto nella gara."
+        }
+      }
     },
-    dates: {
-      selectDates: "Seleziona Date e Ospiti",
-      checkIn: "Data di Check-in",
-      checkOut: "Data di Check-out",
-      adults: "Adulti",
-      children: "Bambini",
-      adult: "Adulto",
-      child: "Bambino",
-      selectDate: "Seleziona data"
+    faq: {
+      subtitle: "DOMANDE COMUNI",
+      title: "Domande Frequenti",
+      description: "Trova risposte alle domande comuni su iscrizione, giorno della gara e altro.",
+      questions: {
+        deadline: {
+          question: "Qual è la scadenza per l'iscrizione?",
+          answer: "Le iscrizioni chiudono due settimane prima della data dell'evento o quando tutti i posti sono esauriti, a seconda di quale condizione si verifichi per prima. Si consiglia l'iscrizione anticipata poiché i posti si riempiono rapidamente."
+        },
+        refund: {
+          question: "Qual è la politica di rimborso?",
+          answer: "Rimborsi completi sono disponibili fino a 30 giorni prima dell'evento. Tra 30 e 14 giorni, viene offerto un rimborso del 50%. Non vengono forniti rimborsi entro 14 giorni dall'evento, ma sono possibili trasferimenti ad un altro corridore."
+        },
+        packPickup: {
+          question: "Quando e dove posso ritirare il mio pacco gara?",
+          answer: "Il ritiro del pacco gara è disponibile al villaggio dell'evento durante i due giorni precedenti la gara. Dovrai mostrare il tuo documento d'identità e la conferma di registrazione. Il ritiro limitato il giorno della gara è disponibile solo per i partecipanti fuori città."
+        },
+        ageLimit: {
+          question: "C'è un limite di età per i partecipanti?",
+          answer: "Per la maratona completa, i partecipanti devono avere 18 anni o più. La mezza maratona è aperta a coloro che hanno 16 anni o più, mentre la 10K è aperta ai corridori di 12 anni o più. Tutti i minori richiedono il consenso dei genitori."
+        },
+        transfer: {
+          question: "Posso trasferire la mia iscrizione a qualcun altro?",
+          answer: "Sì, i trasferimenti di iscrizione sono consentiti fino a 14 giorni prima della gara. Si applica una piccola tassa amministrativa. I trasferimenti possono essere elaborati tramite il tuo account corridore sul nostro sito web."
+        },
+        deferral: {
+          question: "Posso rinviare la mia iscrizione al prossimo anno?",
+          answer: "I rinvii alla gara dell'anno successivo sono disponibili fino a 30 giorni prima dell'evento con una piccola commissione. Questa opzione è utile se sei infortunato o impossibilitato a partecipare ma vuoi assicurarti il posto per l'anno prossimo."
+        }
+      }
     },
-    accommodationSelect: {
-      title: "Seleziona il tuo Alloggio",
-      guests: "Ospiti",
-      selected: "Selezionato",
-      select: "Seleziona",
-      continue: "Continua"
+    cta: {
+      title: "Non Perderti Questa Esperienza",
+      description: "I posti sono limitati e si stanno riempiendo rapidamente. Iscriviti oggi per assicurarti il tuo posto e iniziare il tuo percorso di allenamento.",
+      registerNow: "Iscriviti Ora"
+    }
+  },
+  schedule: {
+    title: "Programma dell'Evento",
+    subtitle: "ITINERARIO DEL WEEKEND DI GARA",
+    description: "Pianifica il tuo weekend di gara con il nostro programma dettagliato dell'evento. Dall'expo alle celebrazioni post-gara, abbiamo coperto tutto.",
+    timeline: {
+      title: "Cronologia degli Eventi",
+      description: "Eventi e attività chiave programmati per il weekend di gara.",
+      events: [
+        {
+          date: "13 Settembre 2025",
+          title: "Expo Maratona e Registrazione",
+          description: "Visita il nostro expo per ritirare il tuo pettorale, chip per il cronometraggio e pacco gara. Sfoglia gli espositori per le ultime novità in attrezzature da corsa e nutrizione.",
+          time: "10:00 - 19:00",
+          location: "Centro Congressi della Città"
+        },
+        {
+          date: "14 Settembre 2025",
+          title: "Registrazione dell'Ultimo Minuto e Briefing Pre-Gara",
+          description: "Ultima possibilità per registrarsi e ritirare i materiali di gara. Partecipa al briefing per importanti informazioni e aggiornamenti sulla gara.",
+          time: "10:00 - 17:00",
+          location: "Centro Congressi della Città"
+        },
+        {
+          date: "15 Settembre 2025",
+          title: "Partenza Maratona",
+          description: "L'evento principale! Inizia la maratona completa, seguita dalla mezza maratona e dalle corse 10K.",
+          time: "6:00",
+          location: "Parco Centrale"
+        },
+        {
+          date: "15 Settembre 2025",
+          title: "Partenza Mezza Maratona",
+          description: "I corridori della mezza maratona iniziano il loro viaggio.",
+          time: "7:30",
+          location: "Parco Centrale"
+        },
+        {
+          date: "15 Settembre 2025",
+          title: "Partenza Corsa 10K",
+          description: "I partecipanti alla 10K prendono le loro posizioni di partenza.",
+          time: "8:30",
+          location: "Parco Centrale"
+        },
+        {
+          date: "15 Settembre 2025",
+          title: "Cerimonia di Premiazione",
+          description: "Celebrazione e riconoscimento dei migliori classificati in tutte le categorie di gara.",
+          time: "11:30",
+          location: "Palco al Traguardo"
+        },
+        {
+          date: "15 Settembre 2025",
+          title: "Festival Post-Gara",
+          description: "Cibo, musica e celebrazioni per tutti i partecipanti e sostenitori.",
+          time: "12:00 - 17:00",
+          location: "Parco Centrale"
+        }
+      ]
     },
-    guestInfo: {
-      title: "Informazioni Ospite",
-      firstName: "Nome",
-      lastName: "Cognome",
-      email: "Email",
-      phone: "Telefono",
-      address: "Indirizzo",
-      city: "Città",
-      zipCode: "Codice Postale",
-      country: "Paese",
-      specialRequests: "Richieste Speciali",
-      specialRequestsPlaceholder: "Qualsiasi richiesta speciale o nota per il tuo soggiorno"
+    routeMap: {
+      title: "Percorsi di Gara",
+      description: "Informazioni dettagliate sui nostri percorsi accuratamente progettati per ogni categoria di gara.",
+      distance: "Distanza",
+      fullMarathon: {
+        title: "Percorso Maratona Completa",
+        description: "Il nostro percorso di maratona completa ti porta attraverso le aree più panoramiche della città, tra cui il lungofiume, il quartiere storico e i panorami in cima alla collina. Percorso certificato con cambiamenti moderati di elevazione."
+      },
+      halfMarathon: {
+        title: "Percorso Mezza Maratona",
+        description: "Sperimenta i punti salienti del nostro percorso di maratona in questa opzione di mezza distanza. Perfetto per coloro che cercano un percorso impegnativo ma accessibile con bellissimi scenari urbani e naturali."
+      },
+      tenK: {
+        title: "Percorso 10K",
+        description: "Il nostro percorso 10K veloce e pianeggiante è perfetto per principianti e cercatori di velocità. Il percorso si snoda attraverso il centro città e le aree del parco con cambiamenti minimi di elevazione."
+      }
     },
-    payment: {
-      title: "Informazioni di Pagamento",
-      creditCard: "Carta di Credito",
-      payAtProperty: "Paga in Struttura",
-      nameOnCard: "Nome sulla Carta",
-      cardNumber: "Numero Carta",
-      cardNumberPlaceholder: "0000 0000 0000 0000",
-      expiryDate: "Data di Scadenza",
-      expiryDatePlaceholder: "MM/AA",
-      cvc: "CVC",
-      cvcPlaceholder: "123",
-      payAtPropertyInfo: "Ti verrà richiesto di fornire una carta di credito valida all'arrivo per motivi di sicurezza, ma il pagamento sarà effettuato durante il tuo soggiorno nella struttura."
-    },
-    summary: {
-      title: "Riepilogo Prenotazione",
-      checkIn: "Check-in",
-      checkOut: "Check-out",
-      guests: "Ospiti",
-      night: "notte",
-      nights: "notti",
-      cleaningFee: "Costo pulizie",
-      serviceFee: "Costo servizio",
-      total: "Totale"
-    },
-    confirmation: {
-      title: "Rivedi Dettagli Prenotazione",
-      accommodationDetails: "Dettagli Alloggio",
-      guestDetails: "Dettagli Ospite",
-      name: "Nome",
-      email: "Email",
-      phone: "Telefono",
-      address: "Indirizzo",
-      city: "Città",
-      country: "Paese",
-      specialRequests: "Richieste Speciali",
-      paymentMethod: "Metodo di Pagamento",
-      creditCard: "Carta di Credito",
-      priceSummary: "Riepilogo Prezzi",
-      termsAgree: "Accetto i",
-      termsLink: "Termini e Condizioni",
-      privacyLink: "Politica sulla Privacy",
-      cancellationInfo: "Comprendo che la mia prenotazione è soggetta alla politica di cancellazione della struttura.",
-      back: "Indietro",
-      confirmBooking: "Conferma Prenotazione",
-      success: "Prenotazione Confermata!",
-      emailSent: "La tua prenotazione è stata confermata con successo. Una email di conferma è stata inviata a",
-      bookingReference: "Riferimento Prenotazione",
-      returnToHome: "Torna alla Homepage"
+    aidStations: {
+      title: "Stazioni di Ristoro",
+      description: "Le stazioni di supporto sono posizionate lungo tutti i percorsi per mantenerti idratato ed energico durante tutta la tua corsa.",
+      tableHeaders: {
+        location: "Posizione",
+        distance: "Indicatori di Distanza",
+        services: "Servizi Disponibili",
+        races: "Serve Gare"
+      },
+      stations: [
+        {
+          location: "Ingresso Parco Cittadino",
+          distance: "5K, 25K, 39K",
+          services: "Acqua, Bevande Sportive, Frutta",
+          races: "Tutte le Gare"
+        },
+        {
+          location: "Percorso Lungofiume",
+          distance: "10K, 31.5K",
+          services: "Acqua, Bevande Sportive, Gel Energetici, Medico",
+          races: "Maratona, Mezza Maratona"
+        },
+        {
+          location: "Piazza Storica",
+          distance: "15K, 36K",
+          services: "Acqua, Bevande Sportive, Frutta, Barrette Energetiche, Medico",
+          races: "Maratona, Mezza Maratona"
+        },
+        {
+          location: "Vista sul Porto",
+          distance: "21.1K",
+          services: "Acqua, Bevande Sportive, Gel Energetici, Frutta, Medico",
+          races: "Maratona, Mezza Maratona"
+        }
+      ]
     }
   },
   contact: {
     title: "Contattaci",
-    subtitle: "Siamo qui per aiutarti a rendere il tuo soggiorno indimenticabile. Contattaci per qualsiasi domanda o richiesta speciale.",
+    subtitle: "Siamo qui per rispondere a tutte le tue domande sul nostro evento maratona. Contattaci per qualsiasi richiesta.",
     getInTouch: "Mettiti in Contatto",
     address: "Indirizzo",
     phone: "Telefono",
     email: "Email",
-    receptionHours: "Orari Reception",
-    checkInTime: "Check-in: Dopo le 15:00",
-    checkOutTime: "Check-out: Prima delle 11:00",
+    receptionHours: "Orari Ufficio",
+    weekdays: "Giorni Feriali: 9:00 - 17:00",
+    weekends: "Fine Settimana: Chiuso",
     sendMessage: "Inviaci un Messaggio",
     fullName: "Nome Completo",
     phoneNumber: "Numero di Telefono",
     subject: "Oggetto",
     message: "Messaggio",
     howCanWeHelp: "Come possiamo aiutarti?",
-    send: "Invia",
+    send: "Invia Messaggio",
     messageSent: "Messaggio Inviato!",
     thankYou: "Grazie per averci contattato. Risponderemo al tuo messaggio il prima possibile.",
     faq: "Domande Frequenti",
-    faqSubtitle: "Trova risposte rapide alle domande più comuni sui nostri alloggi e servizi.",
+    faqSubtitle: "Trova risposte rapide alle domande più comuni sul nostro evento maratona.",
     questions: {
-      checkInOut: {
-        question: "Quali sono gli orari di check-in e check-out?",
-        answer: "Il check-in è dalle 15:00 in poi, e il check-out è fino alle 11:00. Il check-in anticipato o il check-out posticipato possono essere organizzati in base alla disponibilità."
+      registration: {
+        question: "Come mi iscrivo alla maratona?",
+        answer: "La registrazione può essere completata online attraverso il nostro sito web. Visita la pagina di Iscrizione, seleziona la categoria di gara preferita, compila le informazioni richieste e procedi con il pagamento per assicurarti il posto."
+      },
+      preparation: {
+        question: "Come dovrei prepararmi per la maratona?",
+        answer: "L'allenamento per una maratona dovrebbe iniziare almeno 16-20 settimane prima dell'evento. Forniamo guide di allenamento sul nostro sito web adattate per diversi livelli di fitness e distanze di gara. Nutrizione adeguata, idratazione e riposo sono anche componenti cruciali della preparazione."
+      },
+      accommodation: {
+        question: "Ci sono hotel consigliati vicino all'evento?",
+        answer: "Sì, collaboriamo con diversi hotel vicino all'area di partenza/arrivo che offrono tariffe speciali per i corridori. Visita la nostra pagina Alloggio per una lista di hotel partner e informazioni sulla prenotazione."
+      },
+      transportation: {
+        question: "È previsto il trasporto alla linea di partenza?",
+        answer: "Offriamo servizi di navetta da punti di raccolta designati in città all'area di partenza. I pass per la navetta possono essere acquistati durante la registrazione o aggiunti successivamente tramite il tuo account corridore."
       },
       parking: {
-        question: "È disponibile il parcheggio presso la struttura?",
-        answer: "Sì, offriamo parcheggio gratuito per tutti gli ospiti. Il servizio di parcheggio con valletto è disponibile anche a un costo aggiuntivo."
+        question: "Dove posso parcheggiare il giorno della gara?",
+        answer: "Diverse strutture di parcheggio sono disponibili vicino all'area di partenza/arrivo. Consigliamo di arrivare presto poiché i posti si riempiono rapidamente. Una mappa dei parcheggi con tariffe e indicazioni è disponibile sul nostro sito web."
       },
-      pets: {
-        question: "Gli animali domestici sono ammessi negli appartamenti?",
-        answer: "Accogliamo gli animali domestici in appartamenti designati pet-friendly. Si prega di informarci in anticipo se si prevede di portare un animale domestico, poiché potrebbero essere applicati costi aggiuntivi."
-      },
-      breakfast: {
-        question: "La colazione è inclusa nella tariffa della camera?",
-        answer: "La colazione è inclusa in pacchetti camera selezionati. Puoi verificare l'inclusione durante il processo di prenotazione o aggiungerla alla tua prenotazione in qualsiasi momento."
-      },
-      transfers: {
-        question: "Offrite trasferimenti aeroportuali?",
-        answer: "Sì, offriamo trasferimenti aeroportuali a un costo aggiuntivo. Si prega di contattare la nostra concierge almeno 48 ore prima del tuo arrivo per organizzare il trasporto."
-      },
-      amenities: {
-        question: "Quali servizi sono disponibili nella struttura?",
-        answer: "La nostra struttura dispone di piscine, una spa, ristoranti, un bar sulla spiaggia, un centro fitness e accesso diretto alla spiaggia. Tutti gli appartamenti includono Wi-Fi, aria condizionata e elettrodomestici moderni."
+      spectators: {
+        question: "Quali sono i posti migliori per gli spettatori?",
+        answer: "Gli spettatori possono guardare da multiple zone di visione lungo il percorso. L'area di partenza/arrivo, il centro città e il parco lungofiume sono spot particolarmente popolari con buona visibilità e servizi."
       }
-    }
-  },
-  home: {
-    welcome: {
-      subtitle: "Benvenuti a MareSereno",
-      title: "Alloggi di Lusso sul Mare",
-      description1: "Situato sulla incontaminata costa mediterranea, MareSereno offre una squisita collezione di appartamenti di lusso e camere d'albergo. I nostri alloggi fronte mare combinano un design elegante con comfort moderni, creando l'ambientazione perfetta per una indimenticabile fuga al mare.",
-      description2: "Che tu stia cercando una fuga romantica, una vacanza in famiglia o un ritiro tranquillo, la nostra vasta gamma di alloggi si adatta a ogni preferenza ed esigenza. Ogni spazio è progettato con cura per fornire viste panoramiche sul mare e accesso diretto alla spiaggia.",
-      learnMore: "Scopri di Più"
-    },
-    booking: {
-      subtitle: "Prenota il tuo Soggiorno",
-      title: "Prenota la tua Vacanza Perfetta",
-      description: "Fai il primo passo verso la tua vacanza da sogno verificando la disponibilità e assicurandoti le date preferite. Il nostro semplice processo di prenotazione garantisce un'esperienza senza interruzioni dalla prenotazione all'arrivo.",
-      benefits: ["Conferma istantanea", "Miglior tariffa garantita", "Opzioni di cancellazione flessibili", "Pagamento sicuro"]
-    },
-    featuredApartments: {
-      subtitle: "I Nostri Alloggi",
-      title: "Appartamenti in Evidenza",
-      description: "Scopri le nostre opzioni di alloggio più popolari, ognuna che offre un perfetto equilibrio di comfort, stile e viste mozzafiato sul mare.",
-      viewAll: "Visualizza Tutti gli Appartamenti"
-    },
-    amenities: {
-      subtitle: "Servizi dell'Hotel",
-      title: "Vivi il Meglio",
-      description: "Goditi le nostre strutture e servizi premium progettati per rendere il tuo soggiorno eccezionale.",
-      features: {
-        beachfront: {
-          title: "Posizione Fronte Mare",
-          description: "Accesso diretto a spiagge incontaminate con acque cristalline."
-        },
-        pools: {
-          title: "Piscine",
-          description: "Rilassati accanto alle nostre piscine a sfioro con vista mozzafiato sul mare."
-        },
-        restaurant: {
-          title: "Ristorante Gourmet",
-          description: "Goditi squisita cucina locale e internazionale."
-        },
-        wifi: {
-          title: "Wi-Fi ad Alta Velocità",
-          description: "Rimani connesso con internet ad alta velocità gratuito."
-        },
-        bar: {
-          title: "Bar & Caffè sulla Spiaggia",
-          description: "Bevande rinfrescanti e snack serviti direttamente sulla spiaggia."
-        },
-        location: {
-          title: "Posizione Privilegiata",
-          description: "Vicino alle attrazioni locali, negozi e ristoranti."
-        }
-      }
-    },
-    cta: {
-      title: "Pronto per la tua Vacanza da Sogno?",
-      description: "Prenota il tuo soggiorno oggi e vivi il perfetto connubio di lusso, comfort e viste mozzafiato sul mare.",
-      bookNow: "Prenota Ora"
-    }
-  },
-  amenitiesPage: {
-    title: "I Nostri Servizi",
-    subtitle: "Scopri i servizi e le comodità di lusso che rendono il tuo soggiorno indimenticabile.",
-    description: "A MareSereno, ci dedichiamo a fornire un'esperienza di soggiorno completa e lussuosa. Dai nostri servizi sulla spiaggia alle strutture di benessere, ogni dettaglio è stato curato per garantire il massimo comfort e piacere.",
-    categories: {
-      wellness: {
-        title: "Benessere e Relax",
-        description: "Trattati con la nostra gamma di servizi benessere progettati per ringiovanire corpo e mente.",
-        items: [
-          {
-            title: "Spa di Lusso",
-            description: "La nostra spa offre una gamma completa di trattamenti, dalle terapie tradizionali ai trattamenti di bellezza più moderni."
-          },
-          {
-            title: "Centro Fitness",
-            description: "Mantieni la tua routine di fitness con la nostra palestra all'avanguardia con vista panoramica sul mare."
-          },
-          {
-            title: "Piscina Infinity",
-            description: "Immergiti nella nostra piscina a sfioro mentre ammiri l'orizzonte infinito del mare."
-          },
-          {
-            title: "Yoga sulla Spiaggia",
-            description: "Partecipa alle nostre sessioni di yoga mattutine sulla spiaggia per un risveglio rivitalizzante."
-          }
-        ]
-      },
-      dining: {
-        title: "Ristorazione",
-        description: "Scopri il meglio della cucina locale e internazionale nei nostri ristoranti e bar.",
-        items: [
-          {
-            title: "Ristorante Gourmet",
-            description: "Assapora piatti raffinati preparati dai nostri chef con ingredienti locali freschi."
-          },
-          {
-            title: "Bar sulla Spiaggia",
-            description: "Goditi cocktail rinfrescanti e snack leggeri con i piedi nella sabbia."
-          },
-          {
-            title: "Lounge Bar",
-            description: "Rilassati con una selezione di vini pregiati e liquori in un'atmosfera elegante."
-          },
-          {
-            title: "Servizio in Camera",
-            description: "Goditi pasti gourmet nella privacy del tuo appartamento, disponibile 24 ore su 24."
-          }
-        ]
-      },
-      services: {
-        title: "Servizi Extra",
-        description: "Approfitta dei nostri servizi aggiuntivi per un soggiorno senza problemi.",
-        items: [
-          {
-            title: "Concierge 24/7",
-            description: "Il nostro team di concierge è disponibile in qualsiasi momento per assisterti con qualsiasi richiesta."
-          },
-          {
-            title: "Trasferimenti Aeroportuali",
-            description: "Viaggia comodamente da e per l'aeroporto con il nostro servizio di trasferimento privato."
-          },
-          {
-            title: "Noleggio Auto",
-            description: "Esplora la zona con la nostra flotta di veicoli premium disponibili per il noleggio."
-          },
-          {
-            title: "Escursioni Guidate",
-            description: "Scopri le attrazioni locali con le nostre escursioni personalizzate guidate da esperti."
-          }
-        ]
-      },
-      entertainment: {
-        title: "Intrattenimento",
-        description: "Goditi una varietà di attività ricreative pensate per tutti i gusti.",
-        items: [
-          {
-            title: "Sport Acquatici",
-            description: "Prova una vasta gamma di sport acquatici, dal paddleboarding al jet skiing."
-          },
-          {
-            title: "Area Giochi per Bambini",
-            description: "I più piccoli possono divertirsi nella nostra area giochi sicura e supervisionata."
-          },
-          {
-            title: "Serate a Tema",
-            description: "Partecipa alle nostre serate a tema settimanali con musica dal vivo e intrattenimento."
-          },
-          {
-            title: "Biblioteca & Sala Giochi",
-            description: "Rilassati con un buon libro o goditi i giochi da tavolo nella nostra sala comune."
-          }
-        ]
-      }
-    }
-  },
-  apartmentDescriptions: {
-    "1": {
-      name: "Suite Vista Mare Deluxe",
-      description: "Suite lussuosa con vista panoramica sul mare, comfort moderni e balcone privato."
-    },
-    "2": {
-      name: "Appartamento Premium per Famiglie",
-      description: "Appartamento spazioso ideale per famiglie, con cucina completa e splendide viste costiere."
-    },
-    "3": {
-      name: "Studio Esecutivo sulla Spiaggia",
-      description: "Elegante studio con accesso diretto alla spiaggia, design moderno e finiture di pregio."
-    },
-    "4": {
-      name: "Suite Attico di Lusso",
-      description: "Esclusiva suite all'ultimo piano con ampia terrazza e vista panoramica sul mare."
-    },
-    "5": {
-      name: "Camera Doppia Classica",
-      description: "Confortevole camera d'albergo con comfort moderni e vista parziale sul mare."
-    },
-    "6": {
-      name: "Appartamento Vista Giardino",
-      description: "Appartamento tranquillo circondato da rigogliosi giardini, a breve distanza dalla spiaggia."
     }
   }
 };

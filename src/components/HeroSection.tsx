@@ -29,7 +29,7 @@ export default function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1615571022219-eb45cf7faa9d?q=80&w=1920&auto=format&fit=crop')",
+          backgroundImage: "url('https://images.unsplash.com/photo-1530137096282-dcac28c187b3?q=80&w=1920&auto=format&fit=crop')",
           transform: `translateY(${backgroundY}px)`,
           backgroundPosition: `center ${50 + scrollY * 0.05}%`
         }}
@@ -55,10 +55,10 @@ export default function HeroSection() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button asChild size="lg" variant="heroSolid" className="min-w-[200px] rounded-full transform transition-all duration-300 hover:translate-y-[-2px]">
-              <Link to="/booking">{t.hero.bookStay}</Link>
+              <Link to="/registration">{t.hero.register}</Link>
             </Button>
             <Button asChild variant="hero" size="lg" className="min-w-[200px] rounded-full transform transition-all duration-300 hover:translate-y-[-2px]">
-              <Link to="/apartments">{t.hero.exploreApartments}</Link>
+              <Link to="/schedule">{t.hero.viewSchedule}</Link>
             </Button>
           </div>
         </div>

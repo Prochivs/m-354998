@@ -15,8 +15,8 @@ export default function Navbar() {
   
   const navLinks = [
     { name: t.nav.home, path: "/" },
-    { name: t.nav.apartments, path: "/apartments" },
-    { name: t.nav.amenities, path: "/amenities" },
+    { name: t.nav.registration, path: "/registration" },
+    { name: t.nav.schedule, path: "/schedule" },
     { name: t.nav.gallery, path: "/gallery" },
     { name: t.nav.contact, path: "/contact" }
   ];
@@ -32,25 +32,29 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [scrolled]);
   
-  return <header className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300", scrolled ? "bg-white/80 dark:bg-card/80 backdrop-blur-lg py-3 shadow-md" : "bg-transparent py-5")}>
+  return (
+    <header className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300", scrolled ? "bg-white/80 dark:bg-card/80 backdrop-blur-lg py-3 shadow-md" : "bg-transparent py-5")}>
       <nav className="container flex justify-between items-center">
         <div className="flex items-center space-x-2">
+          <Link to="/" className="font-bold text-xl">MarathonPro</Link>
           <LanguageSelector />
         </div>
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex space-x-8">
-          {navLinks.map(link => <li key={link.name} className="relative">
+          {navLinks.map(link => (
+            <li key={link.name} className="relative">
               <Link to={link.path} className="font-medium transition-colors hover:text-primary after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full">
                 {link.name}
               </Link>
-            </li>)}
+            </li>
+          ))}
         </ul>
 
         <div className="hidden md:flex items-center space-x-2">
           <ThemeToggle />
           <Button asChild className="btn-primary">
-            <Link to="/booking">{t.nav.bookNow}</Link>
+            <Link to="/registration">{t.nav.register}</Link>
           </Button>
         </div>
 
@@ -75,21 +79,24 @@ export default function Navbar() {
                 </Button>
               </div>
               <ul className="space-y-6">
-                {navLinks.map(link => <li key={link.name}>
+                {navLinks.map(link => (
+                  <li key={link.name}>
                     <Link to={link.path} className="text-lg font-medium transition-colors hover:text-primary" onClick={() => setMobileMenuOpen(false)}>
                       {link.name}
                     </Link>
-                  </li>)}
+                  </li>
+                ))}
               </ul>
             </div>
             
             <Button asChild className="w-full btn-primary mt-6">
-              <Link to="/booking" onClick={() => setMobileMenuOpen(false)}>
-                {t.nav.bookNow}
+              <Link to="/registration" onClick={() => setMobileMenuOpen(false)}>
+                {t.nav.register}
               </Link>
             </Button>
           </div>
         </div>
       </div>
-    </header>;
+    </header>
+  );
 }
