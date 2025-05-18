@@ -51,6 +51,34 @@ export default function Contact() {
     }, 3000);
   };
   
+  // Define the FAQ questions to use for the Contact page
+  const faqQuestions = [
+    {
+      questionKey: "registration",
+      icon: <MapPin className="h-5 w-5 text-primary" />
+    },
+    {
+      questionKey: "preparation",
+      icon: <MapPin className="h-5 w-5 text-primary" />
+    },
+    {
+      questionKey: "accommodation",
+      icon: <MapPin className="h-5 w-5 text-primary" />
+    },
+    {
+      questionKey: "transportation",
+      icon: <MapPin className="h-5 w-5 text-primary" />
+    },
+    {
+      questionKey: "parking",
+      icon: <MapPin className="h-5 w-5 text-primary" />
+    },
+    {
+      questionKey: "spectators",
+      icon: <MapPin className="h-5 w-5 text-primary" />
+    },
+  ];
+  
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -254,41 +282,22 @@ export default function Contact() {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 animate-fade-in [animation-delay:200ms]">
-              {[
-                {
-                  questionKey: "checkInOut",
-                  icon: <Clock className="h-5 w-5 text-primary" />
-                },
-                {
-                  questionKey: "parking",
-                  icon: <MapPin className="h-5 w-5 text-primary" />
-                },
-                {
-                  questionKey: "pets",
-                  icon: <MapPin className="h-5 w-5 text-primary" />
-                },
-                {
-                  questionKey: "breakfast",
-                  icon: <MapPin className="h-5 w-5 text-primary" />
-                },
-                {
-                  questionKey: "transfers",
-                  icon: <MapPin className="h-5 w-5 text-primary" />
-                },
-                {
-                  questionKey: "amenities",
-                  icon: <MapPin className="h-5 w-5 text-primary" />
-                },
-              ].map((faq, index) => (
-                <div key={index} className="glass-card p-6">
-                  <h3 className="font-semibold text-lg mb-2">
-                    {t.contact.questions[faq.questionKey].question}
-                  </h3>
-                  <p className="text-muted-foreground">
-                    {t.contact.questions[faq.questionKey].answer}
-                  </p>
-                </div>
-              ))}
+              {faqQuestions.map((faq, index) => {
+                // Make sure the question key exists in the translations before attempting to access it
+                if (t.contact.questions && t.contact.questions[faq.questionKey]) {
+                  return (
+                    <div key={index} className="glass-card p-6">
+                      <h3 className="font-semibold text-lg mb-2">
+                        {t.contact.questions[faq.questionKey].question}
+                      </h3>
+                      <p className="text-muted-foreground">
+                        {t.contact.questions[faq.questionKey].answer}
+                      </p>
+                    </div>
+                  );
+                }
+                return null; // Skip rendering if the key doesn't exist
+              })}
             </div>
           </div>
         </section>
