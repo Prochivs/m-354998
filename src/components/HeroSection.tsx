@@ -29,14 +29,14 @@ export default function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1530137096282-dcac28c187b3?q=80&w=1920&auto=format&fit=crop')",
+          backgroundImage: "url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=1920&auto=format&fit=crop')",
           transform: `translateY(${backgroundY}px)`,
           backgroundPosition: `center ${50 + scrollY * 0.05}%`
         }}
       />
       
-      {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/60" />
+      {/* Enhanced overlay with gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-primary/30 to-black/70" />
       
       {/* Content */}
       <div
@@ -44,13 +44,13 @@ export default function HeroSection() {
         style={{ transform: `translateY(${contentY}px)` }}
       >
         <div className="max-w-3xl animate-fade-in">
-          <span className="inline-block text-white/90 text-lg mb-4 tracking-wide border-b border-white/30 pb-2">
+          <span className="inline-block text-white/90 text-lg mb-4 tracking-wide border-b border-white/30 pb-2 font-sans">
             {t.hero.subtitle}
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 font-['Inter']">
             {t.hero.title}
           </h1>
-          <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto font-['Inter']">
             {t.hero.description}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -70,7 +70,7 @@ export default function HeroSection() {
           href="#welcome" 
           className="flex flex-col items-center opacity-70 hover:opacity-100 transition-opacity"
         >
-          <span className="text-sm mb-2">{t.hero.scrollDown}</span>
+          <span className="text-sm mb-2 font-['Inter']">{t.hero.scrollDown}</span>
           <ChevronDown className="h-6 w-6" />
         </a>
       </div>
