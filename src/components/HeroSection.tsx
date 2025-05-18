@@ -29,14 +29,14 @@ export default function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=1920&auto=format&fit=crop')",
+          backgroundImage: "url('/lovable-uploads/124076b8-ca20-4b69-8153-7c52c24eefeb.png')",
           transform: `translateY(${backgroundY}px)`,
           backgroundPosition: `center ${50 + scrollY * 0.05}%`
         }}
       />
       
       {/* Enhanced overlay with gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-primary/30 to-black/70" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-primary/40 to-black/70" />
       
       {/* Content */}
       <div

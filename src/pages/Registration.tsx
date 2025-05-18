@@ -15,21 +15,21 @@ export default function Registration() {
     window.scrollTo(0, 0);
   }, []);
   
-  // Sample race categories
-  const raceTiers = [
+  // Get race data from localStorage or use defaults
+  const raceTiers = JSON.parse(localStorage.getItem("marathonRaceData") || "null") || [
     {
       name: "Full Marathon",
-      price: 75,
+      price: 250,
       features: ["42.195 km race", "Official timing chip", "Race bib with name", "Finisher medal", "Finisher t-shirt", "Refreshments", "Digital certificate"]
     },
     {
       name: "Half Marathon",
-      price: 45,
+      price: 150,
       features: ["21.1 km race", "Official timing chip", "Race bib with name", "Finisher medal", "Finisher t-shirt", "Refreshments", "Digital certificate"]
     },
     {
       name: "10K Run",
-      price: 30,
+      price: 100,
       features: ["10 km race", "Official timing chip", "Race bib with number", "Finisher medal", "Event t-shirt", "Refreshments", "Digital certificate"]
     }
   ];
@@ -66,7 +66,7 @@ export default function Registration() {
         <section className="section">
           <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {raceTiers.map((tier, index) => (
+              {Object.values(raceTiers).map((tier, index) => (
                 <div 
                   key={tier.name} 
                   className="glass-card p-8 rounded-xl animate-fade-in"
@@ -74,7 +74,7 @@ export default function Registration() {
                 >
                   <h3 className="text-2xl font-bold mb-2">{tier.name}</h3>
                   <div className="mb-4">
-                    <span className="text-3xl font-bold text-primary">${tier.price}</span>
+                    <span className="text-3xl font-bold text-primary">BWP {tier.price}</span>
                   </div>
                   <ul className="space-y-3 mb-8">
                     {tier.features.map((feature, i) => (

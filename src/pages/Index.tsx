@@ -8,28 +8,6 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Timer, Medal, Map, Users, Calendar, Clock, Award, Heart, LifeBuoy } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-// Sample race categories
-const raceCategories = [
-  {
-    name: "Full Marathon",
-    distance: "42.195 km",
-    price: 75,
-    image: "https://images.unsplash.com/photo-1541252260730-0412e8e2108e?w=800&h=600&fit=crop",
-  },
-  {
-    name: "Half Marathon",
-    distance: "21.1 km",
-    price: 45,
-    image: "https://images.unsplash.com/photo-1539966903171-89770f33f468?w=800&h=600&fit=crop",
-  },
-  {
-    name: "10K Run",
-    distance: "10 km",
-    price: 30,
-    image: "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=800&h=600&fit=crop",
-  }
-];
-
 export default function Index() {
   const { t } = useLanguage();
   
@@ -37,6 +15,44 @@ export default function Index() {
     // Scroll to top when component mounts
     window.scrollTo(0, 0);
   }, []);
+  
+  // Get race data from localStorage or use defaults
+  const raceData = JSON.parse(localStorage.getItem("marathonRaceData") || "null") || {
+    fullMarathon: {
+      name: "Full Marathon",
+      distance: "42.195 km",
+      price: 250,
+      description: "Experience the full marathon challenge"
+    },
+    halfMarathon: {
+      name: "Half Marathon",
+      distance: "21.1 km",
+      price: 150,
+      description: "Perfect for intermediate runners"
+    },
+    tenK: {
+      name: "10K Run",
+      distance: "10 km",
+      price: 100,
+      description: "Great for beginners and casual runners"
+    }
+  };
+  
+  // Sample race categories
+  const raceCategories = [
+    {
+      ...raceData.fullMarathon,
+      image: "https://images.unsplash.com/photo-1541252260730-0412e8e2108e?w=800&h=600&fit=crop",
+    },
+    {
+      ...raceData.halfMarathon,
+      image: "https://images.unsplash.com/photo-1539966903171-89770f33f468?w=800&h=600&fit=crop",
+    },
+    {
+      ...raceData.tenK,
+      image: "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=800&h=600&fit=crop",
+    }
+  ];
   
   // Feature items
   const features = [
@@ -204,11 +220,11 @@ export default function Index() {
                   <div className="p-6">
                     <div className="flex justify-between items-center mb-2">
                       <h3 className="text-xl font-semibold">{category.name}</h3>
-                      <span className="text-primary font-bold">${category.price}</span>
+                      <span className="text-primary font-bold">BWP {category.price}</span>
                     </div>
                     <p className="text-muted-foreground mb-4">{category.distance}</p>
                     <Button asChild className="w-full btn-primary">
-                      <Link to="/registration">
+                      <Link to="/registration/form">
                         {t.home.raceCategories.register}
                       </Link>
                     </Button>
@@ -290,7 +306,7 @@ export default function Index() {
             
             <div className="text-center mt-12">
               <Button asChild size="lg" className="btn-primary">
-                <Link to="/registration">{t.home.countdown.register}</Link>
+                <Link to="/registration/form">{t.home.countdown.register}</Link>
               </Button>
             </div>
           </div>
@@ -307,7 +323,7 @@ export default function Index() {
                 {t.home.cta.description}
               </p>
               <Button asChild size="lg" className="btn-primary">
-                <Link to="/registration">{t.home.cta.registerNow}</Link>
+                <Link to="/registration/form">{t.home.cta.registerNow}</Link>
               </Button>
             </div>
           </div>

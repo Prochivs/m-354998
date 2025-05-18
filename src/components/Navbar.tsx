@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, User } from "lucide-react";
 import { cn } from "@/lib/utils";
 import ThemeToggle from "./ThemeToggle";
 import LanguageSelector from "./LanguageSelector";
@@ -53,8 +53,13 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center space-x-2">
           <ThemeToggle />
+          <Button asChild variant="outline" size="icon" className="rounded-full">
+            <Link to="/admin">
+              <User className="h-4 w-4" />
+            </Link>
+          </Button>
           <Button asChild className="btn-primary">
-            <Link to="/registration">{t.nav.register}</Link>
+            <Link to="/registration/form">{t.nav.register}</Link>
           </Button>
         </div>
 
@@ -86,11 +91,16 @@ export default function Navbar() {
                     </Link>
                   </li>
                 ))}
+                <li>
+                  <Link to="/admin" className="text-lg font-medium transition-colors hover:text-primary" onClick={() => setMobileMenuOpen(false)}>
+                    Admin
+                  </Link>
+                </li>
               </ul>
             </div>
             
             <Button asChild className="w-full btn-primary mt-6">
-              <Link to="/registration" onClick={() => setMobileMenuOpen(false)}>
+              <Link to="/registration/form" onClick={() => setMobileMenuOpen(false)}>
                 {t.nav.register}
               </Link>
             </Button>
