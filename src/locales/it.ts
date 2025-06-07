@@ -17,7 +17,7 @@ export const it = {
     scrollDown: "Scorri Giù"
   },
   footer: {
-    description: "MarathonPro organizza eventi di corsa di livello mondiale che sfidano atleti di tutti i livelli. Unisciti al nostro prossimo evento per un'esperienza indimenticabile.",
+    description: "HISCHURCH MARATHON organizza eventi di corsa di livello mondiale che sfidano atleti di tutti i livelli. Unisciti al nostro prossimo evento per un'esperienza indimenticabile.",
     quickLinks: "Link Rapidi",
     contact: "Contatti",
     newsletter: "Newsletter",
@@ -37,9 +37,9 @@ export const it = {
   },
   home: {
     welcome: {
-      subtitle: "Benvenuti a MarathonPro",
+      subtitle: "Benvenuti a HISCHURCH MARATHON",
       title: "Vivi la Sfida di Corsa Definitiva",
-      description1: "MarathonPro ti offre un evento di corsa di primo livello immerso in un paesaggio mozzafiato. Che tu sia un corridore competitivo o un principiante, i nostri percorsi offrono la sfida perfetta e un'esperienza indimenticabile.",
+      description1: "HISCHURCH MARATHON ti offre un evento di corsa di primo livello immerso in un paesaggio mozzafiato. Che tu sia un corridore competitivo o un principiante, i nostri percorsi offrono la sfida perfetta e un'esperienza indimenticabile.",
       description2: "Dalla panoramica maratona completa alla accessibile corsa di 10K, abbiamo progettato percorsi che mettono in mostra il bellissimo paesaggio offrendo al contempo un'esperienza di corsa di livello mondiale per atleti di tutti i livelli.",
       learnMore: "Scopri di Più"
     },

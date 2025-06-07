@@ -16,7 +16,7 @@ export default function Navbar() {
   const navLinks = [
     { name: t.nav.home, path: "/" },
     { name: t.nav.registration, path: "/registration" },
-    { name: t.nav.schedule, path: "/schedule" },
+    // { name: t.nav.schedule, path: "/schedule" },
     { name: t.nav.gallery, path: "/gallery" },
     { name: t.nav.contact, path: "/contact" }
   ];
@@ -33,11 +33,11 @@ export default function Navbar() {
   }, [scrolled]);
   
   return (
-    <header className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300", scrolled ? "bg-white/80 dark:bg-card/80 backdrop-blur-lg py-3 shadow-md" : "bg-transparent py-5")}>
+    <header className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300", scrolled ? "bg-white/80 dark:bg-card/80 backdrop-blur-lg py-3 shadow-md " : "bg-transparent py-5 text-white")}>
       <nav className="container flex justify-between items-center">
         <div className="flex items-center space-x-2">
-          <Link to="/" className="font-bold text-xl">MarathonPro</Link>
-          <LanguageSelector />
+          {/* <img  src="https://fearlessgroup.co.bw/wp-content/uploads/2024/10/fearless-logo.png" className="font-bold text-xl"/> */}
+          {/* <LanguageSelector /> */}
         </div>
 
         {/* Desktop Navigation */}
@@ -52,13 +52,15 @@ export default function Navbar() {
         </ul>
 
         <div className="hidden md:flex items-center space-x-2">
-          <ThemeToggle />
-          <Button asChild variant="outline" size="icon" className="rounded-full">
+          {/* <ThemeToggle /> */}
+          {/* <Button asChild variant="outline" size="icon" className="rounded-full">
             <Link to="/admin">
               <User className="h-4 w-4" />
             </Link>
-          </Button>
-          <Button asChild className="btn-primary">
+          </Button> */}
+          <Button asChild className="btn-primary"  style={{
+                    background: "#144674",
+                  }}>
             <Link to="/registration/form">{t.nav.register}</Link>
           </Button>
         </div>

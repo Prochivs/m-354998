@@ -17,7 +17,7 @@ export const en = {
     scrollDown: "Scroll Down"
   },
   footer: {
-    description: "MarathonPro organizes world-class running events that challenge athletes of all levels. Join our next event for an unforgettable experience.",
+    description: "HISCHURCH MARATHON organizes world-class running events that challenge athletes of all levels. Join our next event for an unforgettable experience.",
     quickLinks: "Quick Links",
     contact: "Contact",
     newsletter: "Newsletter",
@@ -37,9 +37,9 @@ export const en = {
   },
   home: {
     welcome: {
-      subtitle: "Welcome to MarathonPro",
+      subtitle: "Welcome to HISCHURCH MARATHON",
       title: "Experience the Ultimate Running Challenge",
-      description1: "MarathonPro brings you a premier running event set against breathtaking scenery. Whether you're a competitive runner or a first-timer, our courses offer the perfect challenge and an unforgettable experience.",
+      description1: "HISCHURCH MARATHON brings you a premier running event set against breathtaking scenery. Whether you're a competitive runner or a first-timer, our courses offer the perfect challenge and an unforgettable experience.",
       description2: "From the scenic full marathon to the accessible 10K run, we've designed routes that showcase the beautiful landscape while providing a world-class running experience for athletes of all levels.",
       learnMore: "Learn More"
     },

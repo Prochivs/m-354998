@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
@@ -9,74 +8,94 @@ import { useLanguage } from "@/contexts/LanguageContext";
 export default function HeroSection() {
   const { t } = useLanguage();
   const [scrollY, setScrollY] = useState(0);
-  
+
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
     };
-    
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  
+
   // Calculate parallax effect
   const backgroundY = scrollY * 0.5;
   const contentY = scrollY * 0.2;
-  
+
   return (
     <section className="relative h-screen overflow-hidden">
       {/* Background image with parallax */}
-      <div
+      {/* <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: "url('/lovable-uploads/124076b8-ca20-4b69-8153-7c52c24eefeb.png')",
           transform: `translateY(${backgroundY}px)`,
           backgroundPosition: `center ${50 + scrollY * 0.05}%`
         }}
-      />
-      
-      {/* Enhanced overlay with gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-primary/40 to-black/70" />
-      
+      /> */}
+      <div className="absolute inset-0">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover"
+          style={{
+            backgroundImage:
+              "url('/lovable-uploads/124076b8-ca20-4b69-8153-7c52c24eefeb.png')",
+            transform: `translateY(${backgroundY}px)`,
+            backgroundPosition: `center `,
+          }}
+        />
+
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black opacity-80" />
+      </div>
+
       {/* Content */}
       <div
         className="relative h-full flex flex-col justify-center items-center text-center px-4"
         style={{ transform: `translateY(${contentY}px)` }}
       >
         <div className="max-w-3xl animate-fade-in">
-          <span className="inline-block text-white/90 text-lg mb-4 tracking-wide border-b border-white/30 pb-2 font-sans">
+          <span className="inline-block text-gray-300 text-lg mb-4 tracking-wide border-b border-white/30 pb-2">
             {t.hero.subtitle}
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 font-['Inter']">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-400 mb-6">
             {t.hero.title}
-          </h1>
-          <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto font-['Inter']">
+          </h2>
+          <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
             {t.hero.description}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button asChild size="lg" variant="heroSolid" className="min-w-[200px] rounded-full transform transition-all duration-300 hover:translate-y-[-2px]">
+            <Button
+            style={{background: "linear-gradient(to right, #ae1ea3 0%, #144674  85%,#144674  0%)"}}
+              asChild
+              size="lg"
+              variant="heroSolid"
+              className="min-w-[250px] bg-[#144674] text-gray-300 font-bold rounded-md transform transition-all duration-300 hover:translate-y-[-2px]"
+            >
               <Link to="/registration">{t.hero.register}</Link>
             </Button>
-            <Button asChild variant="hero" size="lg" className="min-w-[200px] rounded-full transform transition-all duration-300 hover:translate-y-[-2px]">
+            {/* <Button asChild variant="hero" size="lg" className="min-w-[200px] rounded-md transform transition-all duration-300 hover:translate-y-[-2px]">
               <Link to="/schedule">{t.hero.viewSchedule}</Link>
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>
-      
+
       {/* Scroll down indicator */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
-        <a 
-          href="#welcome" 
+      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-gray-300 animate-bounce">
+        <a
+          href="#welcome"
           className="flex flex-col items-center opacity-70 hover:opacity-100 transition-opacity"
         >
-          <span className="text-sm mb-2 font-['Inter']">{t.hero.scrollDown}</span>
+          <span className="text-sm mb-2 font-['Inter']">
+            {t.hero.scrollDown}
+          </span>
           <ChevronDown className="h-6 w-6" />
         </a>
       </div>
-      
+
       {/* Animated wave */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 overflow-hidden">
+      {/* <div className="absolute bottom-0 left-0 right-0 h-24 overflow-hidden">
         <svg 
           className="absolute bottom-0 w-full h-24 fill-white dark:fill-background"
           preserveAspectRatio="none"
@@ -92,7 +111,7 @@ export default function HeroSection() {
             className="animate-wave opacity-100 [animation-delay:-4s]"
           />
         </svg>
-      </div>
+      </div> */}
     </section>
   );
 }
